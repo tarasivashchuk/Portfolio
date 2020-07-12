@@ -1,26 +1,13 @@
-import flask
 from flask_wtf import FlaskForm
-from wtforms import StringField, TextAreaField, SubmitField
-
-from app import app
+from wtforms import StringField, TextAreaField, SelectField, SubmitField
+from wtforms.validators import DataRequired
 
 
 class ContactForm(FlaskForm):
+    categories = [("general", "General"), ("work", "Work"), ("technical", "Technical"), ("urgent", "Urgent")]
+
     name = StringField("Name")
+    category = SelectField("Category", choices=categories)
     email = StringField("Email")
     message = TextAreaField("Type your message here...")
     submit = SubmitField(label="Send")
-
-
-@app.route('/contact', methods=["GET", "POST"])
-def contact():
-    name = "Taras"
-    email = "taras@tarasivashchuk.com"
-    message = "Hello form!"
-    form = ContactForm()
-
-    if form.validate_on_submit():
-        name, email, message = form.name.data, form.email.data, form.message.data
-        form.name.data, form.email.data, form.message.data = "", "", ""
-
-    return flask.render_template("contact.html", form=form, name=name, email=email, message=message)
