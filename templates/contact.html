@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+
 </head>
 
 <body>
 
 {#Output#} <p>
-    {% if name and email and message %}
+    {% if category and email and message %}
+        <h4 class="badge-pill">{{ category.label }}</h4>
     <blockquote class="blockquote">
     <p class="mb-0">{{ message }}</p>
     <footer class="blockquote-footer"> <cite title="User Name">{{ name }}</cite></footer>
@@ -28,9 +31,8 @@
 {#Input#} <form method="post" class="form-group">
     {{ form.hidden_tag() }}
     {{ form.name.label }} {{ form.name(type="text", class="form-control", placeholder="Enter your name") }}
-    <small id="helpId" class="form-text text-muted">Please enter your contact name</small>
+    {{ form.category.label }} {{ form.category(class="form-control") }}
     {{ form.email.label }} {{ form.email(type="email", class="form-control", placeholder="Enter your email") }}
-    <small id="emailhelpId" class="form-text text-muted">Please enter the email to reach you at</small>
     {{ form.message.label }} {{ form.message(class="form-control", rows=5) }}
     {{ form.submit(class="btn btn-primary") }}
 </form>
