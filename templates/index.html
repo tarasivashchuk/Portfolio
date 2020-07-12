@@ -2,25 +2,44 @@
 <html lang="en">
 
 <head>
-    <script src="http://localhost:8098"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
 
     <meta content="Professional website to show people my machine learning and data science work." name="description" />
     <meta content="Taras Ivashchuk" name="author" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
     <link href="../static/favicon.ico" rel="icon">
     <title>Taras - Full Stack Machine Learning Engineer</title>
 </head>
 
 <body>
-    <div id="portfolio">
-        <div id="personalTextBox">
-
+<div id="portfolio">
+<div id="portfolio-item" class="card-columns">
+    <div class="card">
+        <img class="card-img-top" src="../static/img/voxpredict_logo.svg" alt="VoxPredict Logo">
+        <div class="card-body">
+            <h4 class="card-header">VoxPredict Financial Predictions and Analysis Project Overview</h4>
+            <p class="card-text">Starting with little more than a vague idea, built all the tooling and machine/deep learning for performing high-level analysis of financial markets, incorporating models utilizing data of all kinds - numerical, text, audio, and more. As well as all the tooling for data gathering, data processing, visualization, analysis and all other needs for the project. This is my latest work and I am quite proud of both the huge effort and results of this project.</p>
+            <p class="card-footer">Project started over a phone call and a high-level idea, and was developed by me alone, and worked as a key person for making decisions as part of a team between the president of GWH Ventures LLC, Gary Heinz, and myself.</p>
         </div>
     </div>
-    <script src="../src/main.js"></script>
+    <div class="card">
+        <img class="card-img-top" src="../static/img/orry_logo.png" alt="Orry.ai Logo">
+        <div class="card-body">
+            <h4 class="card-header">Orry.ai Business Intelligence Chatbot MVP Project Overview</h4>
+            <p class="card-subtitle">Built a business intelligence chatbot which served as the startups minimum-viable product (MVP), developing tools for processing queries with state-of-the-art NLP techniques such as transformers (such as GPT-2, BERT, etc.) as well as intelligently retrieving data and working it into a human-like response.</p>
+            <p class="card-text">The founders of Orry.ai came to me with a vision and all of the concept formulation completed and in need of someone to build a working prototype with the core features they outlined that they could use as a demo and proof-of-concept. The development decisions were left to me and I completed the project, with every requirement outlined in the beginning successfully implemented, building a basic three stage chatbot. The stages were broadly:</p>
+            <ul class="card-text list-group">
+                <li class="card-text list-group-item">Text processing cleaning up and standardizing the input query</li>
+                <li class="card-text list-group-item">Natural language machine and/or deep learning models to interpret and classify the processed user query</li>
+                <li class="card-text list-group-item">Data retrieval framework for looking up any required data, both public and proprietary, needed for the response</li>
+                <li class="card-text list-group-item">Natural language model, specifically a transformer (examples include GPT-2  and BERT), to use the data and the question classification to formulate a human-like responses</li>
+            </ul>
+            <p class="card-footer">Project started over a phone call and a high-level idea, and was developed by me alone, and worked as a key person for making decisions as part of a team between the president of GWH Ventures LLC, Gary Heinz, and myself.</p>
+        </div>
+    </div>
+</div>
+</div>
 
 </body>
