@@ -1,1 +1,1 @@
-web: python src/portfolio/app.py
+web: gunicorn app:app
