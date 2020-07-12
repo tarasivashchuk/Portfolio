@@ -1,5 +1,4 @@
-from portfolio.cards import *
-from tests import DEBUG
+from cards import *
 
 
 def test_get_projects_markdown():
