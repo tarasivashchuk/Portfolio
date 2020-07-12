@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "portfolio"
+version = "0.2.0"
+description = "Website built using Flask in order to easily maintain an online portfolio in a modern and engaging fashion."
+authors = ["Taras Ivashchuk <taras@tarasivashchuk.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+python-dotenv = "^0.14.0"
+flask = "^1.1.2"
+flask-wtf = "^0.14.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.4.3"
+pytest-cov = "^2.10.0"
+yapf = "^0.30.0"
+isort = "^5.0.9"
+flake8 = "^3.8.3"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
