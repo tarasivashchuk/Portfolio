@@ -2,7 +2,7 @@ import flask
 from flask_wtf import FlaskForm
 from wtforms import StringField, TextAreaField, SubmitField
 
-from src.portfolio.app import app
+from app import app
 
 
 class ContactForm(FlaskForm):
