@@ -1,4 +1,4 @@
-from portfolio import project_dir
+from . import project_dir
 
 projects_markdown_dir = project_dir.joinpath("references")
 
