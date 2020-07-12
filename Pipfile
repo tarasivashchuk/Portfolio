@@ -4,16 +4,17 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-pytest = "*"
-isort = "*"
-flake8 = "*"
 coverage = "*"
+pytest = "*"
 pytest-cov = "*"
 yapf = "*"
+isort = "*"
+flake8 = "*"
 
 [packages]
+python-dotenv = "*"
 flask = "*"
-logzero = "*"
+flask-wtf = "*"
 
 [requires]
 python_version = "3.8"
