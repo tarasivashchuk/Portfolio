@@ -1,6 +1,6 @@
 import flask
 
-from forms import ContactForm
+from portfolio.forms import ContactForm
 
 app = flask.Flask(__name__)
 app.config["SECRET_KEY"] = "mysecretkey"  # Something secure
