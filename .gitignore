@@ -7,3 +7,8 @@ __pycache__
 .idea
 .vscode
 *.egg-info
+*.pyc
+app.db
+tmp
+build/*
+venv
